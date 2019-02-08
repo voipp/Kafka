@@ -6,6 +6,11 @@ public class PurchaseKey {
     private String customerId;
     private Date transactionDate;
 
+    public PurchaseKey(String customerId, Date transactionDate) {
+        this.customerId = customerId;
+        this.transactionDate = transactionDate;
+    }
+
     public String getCustomerId() {
         return customerId;
     }
