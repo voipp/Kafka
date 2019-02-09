@@ -16,7 +16,7 @@ import java.util.concurrent.ExecutionException;
 public class AdminClientStarter {
     public static void main(String[] args) {
         Properties properties = new Properties();
-        properties.put("bootstrap.servers", "34.222.109.61:9092");
+        properties.put("bootstrap.servers", "localhost:9092");
         properties.put("connections.max.idle.ms", 10000);
         properties.put("request.timeout.ms", 10000);
         try (AdminClient client = KafkaAdminClient.create(properties))
